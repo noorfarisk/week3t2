@@ -114,7 +114,7 @@ class News extends Component{
             this.state.news.map((item, i)=>{
               return (
               <NewsItem key={i}>
-                  <img width="124px;" height="124px" src={item.urlToImage} />
+                  <img  width="124px;" height="124px" src={item.urlToImage} />
                 <NewsText>
                   <h1>{item.title}</h1>
                   <p>{item.description}</p>
@@ -141,8 +141,7 @@ function App() {
   return <div>
     <Dropdown/>
     <News/>
-    
-  </div>
+    </div>
 }
 
 ReactDOM.render(<App/>, document.getElementById('root'))
